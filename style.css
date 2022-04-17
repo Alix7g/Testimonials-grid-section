@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #ccc;
+}
+
+.parent{
+    background-color: #ccc;
+    width: 900px;
+    height: 550px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 200px 225px;
+    gap: 20px;
+    grid-template-rows: 50%;
+}
+div{
+    background-color: #aaa;
+    border-radius: 10px;
+    color: white;
+
+    
+}
+.one{
+    padding: 20px;
+    background: hsl(263, 55%, 52%) url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.two{
+    padding: 20px;
+    background-color: hsl(217, 19%, 35%);
+
+}
+.three{
+    grid-row: span 2;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+.four{
+    padding: 20px;
+    background-color: white;
+    color: black;
+
+}
+.five{
+    padding: 20px;
+    background-color: hsl(219, 29%, 14%);
+
+}
+.parent img{
+    float: left;
+    width: 35px;
+    border-radius: 50%;
+}
+.parent h3{
+    font-size: 11px;
+    
+}
+
+.parent p{
+opacity: 0.8;
+font-size: 11px;
+
+}
+.parent h1{
+    font-size: 15px;
+}
+
+
+
+@media (min-width:375px) and (max-width:400px){
+    .parent{
+        width: 350px;
+        height: 100vr;
+        grid-template-columns: 1fr;
+    }
+    .five{
+        grid-row: 5;
+    }
+}
